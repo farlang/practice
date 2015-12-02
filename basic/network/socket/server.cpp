@@ -78,7 +78,7 @@ int main(int argc, char **argv){
 
         thread reads(read_socket, fd);
         // thread write(write_socket, fd;
-        reads.join();
+        reads.detach();
         cout << "n:" << n++ << endl;
     }
 
