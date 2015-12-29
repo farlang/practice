@@ -64,7 +64,7 @@ static char* ngx_http_valar_init(ngx_conf_t *conf, ngx_command_t *cmd, void *cf)
 	if ( clcf == NULL ) {
 	    return NGX_CONF_ERROR;
 	}
-		
+	clcf->handler = ngx_http_valar_handler;	
 	return NGX_CONF_OK;
 }
 
